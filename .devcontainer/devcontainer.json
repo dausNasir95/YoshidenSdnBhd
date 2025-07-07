@@ -1,0 +1,22 @@
+{
+  "name": "Laravel Codespace",
+  "image": "mcr.microsoft.com/devcontainers/php:8.2",
+  "features": {
+    // Remove or comment out this line:
+    // "ghcr.io/devcontainers/features/composer:1": {},
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "18"
+    }
+  },
+  "postCreateCommand": "composer install && cp .env.example .env && php artisan key:generate",
+  "forwardPorts": [8000],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bmewburn.vscode-intelephense-client",
+        "onecentlin.laravel-blade",
+        "xdebug.php-debug"
+      ]
+    }
+  }
+}
