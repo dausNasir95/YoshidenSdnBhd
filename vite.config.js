@@ -15,7 +15,7 @@ export default defineConfig({
         port: 5173,             // <- (optional, can change if needed)
         strictPort: true,       // <- (optional, avoid port auto-change)
         hmr: {
-            host: '192.168.1.7',  // <- your machine IP address here
+            // host: '192.168.1.7',  // <- your machine IP address here
         },
     },
 });
